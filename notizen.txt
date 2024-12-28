@@ -1,0 +1,87 @@
+
+    <div id="numberOne">1</div>
+    <div id="numberTwo">2</div>
+    <div id="numberThree">3</div>
+    <div id="numberFour">4</div>
+    <div id="numberFive">5</div>
+    <div id="numberSix">6</div>
+    <div id="numberSeven">7</div>
+    <div id="numberEight">8</div>
+    <div id="numberNine">9</div>
+    <div id="numberTen">10</div>
+    <div id="numberEleven">11</div>
+    <div id="numberTwelve">12</div>
+
+
+
+#clock {
+    display: flex;
+    justify-content: center; /* Zentriert horizontal */
+    align-items: center;    /* Zentriert vertikal */
+    height: 100%;           /* Höhe des Viewports */
+    flex-direction: column;
+    color: black;
+}
+
+
+
+body {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Allgemeine Stile für das gesamte Dokument */
+body {
+    margin: 100px;
+    padding: 100px;
+    display: flex;
+    justify-content: center; /* Zentriert horizontal */
+    align-items: center;    /* Zentriert vertikal */
+    height: 80vh;           /* Höhe des Viewports */
+    flex-direction: column;
+}
+
+#clockVis {
+position: relative; 
+border-radius: 50%;
+width: 20vw;
+height: 20vw;
+background-color: rgb(145, 145, 145);
+align-items: center;
+}
+
+#hourHand {
+    position: absolute;
+    width: 3px;                /* Dicke des Strichs */
+    height: 90px;              /* Länge des Strichs */
+    background-color: red;     /* Farbe des Strichs */
+    top: 50%;                  /* Positioniert den Zeiger vertikal */
+    left: 50%;                 /* Positioniert den Zeiger horizontal */
+    transform-origin: 50% 100%;/* Setzt den Drehpunkt am unteren Ende des Zeigers */
+    transform: rotate(30deg);  /* Dreht den Zeiger um einen bestimmten Winkel */
+}
+
+#minuteHand {
+    position: absolute;
+    width: 2px;              
+    height: 90px;             
+    background-color: rgb(0, 216, 97);     
+    top: 50%;                  
+    left: 50%;                
+    transform-origin: 50% 100%;
+    transform: rotate(6deg);  
+}
+
+#secondHand {
+    position: absolute;
+    width: 0.5px;                
+    height: 90px;              
+    background-color: rgb(158, 0, 111);    
+    top: 50%;                 
+    left: 50%;                 
+    transform-origin: 50% 100%;
+    transform: rotate(6deg);
+}
+
+

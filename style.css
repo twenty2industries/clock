@@ -1,0 +1,48 @@
+body {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#clockVis {
+    position: relative;
+    width: 300px;  /* Feste Größe */
+    height: 300px; /* Feste Größe */
+    background-color: rgb(145, 145, 145);
+    border-radius: 50%;
+}
+
+#hourHand, #minuteHand, #secondHand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    transform: rotate(0deg);  /* Setze anfangsrotation auf 0 */
+}
+
+/* Stundenzeiger */
+#hourHand {
+    width: 6px;
+    height: 40%;
+    background-color: red;
+}
+
+/* Minutenzeiger */
+#minuteHand {
+    width: 4px;
+    height: 45%;
+    background-color: rgb(0, 216, 97);
+}
+
+/* Sekundenzeiger */
+#secondHand {
+    width: 2px;
+    height: 50%;
+    background-color: rgb(158, 0, 111);
+}
